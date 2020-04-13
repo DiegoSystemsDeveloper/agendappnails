@@ -53,6 +53,7 @@ public class Menu extends AppCompatActivity {
         });
     }
 
+    //XML - JAVA
     private void conectar() {
         imgBtnAgenda = findViewById(R.id.imgBtnAgenda);
         imgBtnClientes = findViewById(R.id.imgBtnClientes);
