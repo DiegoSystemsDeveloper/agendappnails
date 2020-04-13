@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    android:gravity="center"
+    tools:context=".Trabajos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Registro Trabajos"
+        android:id="@+id/tv1"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textColor="#880E4F"
+        android:textSize="35sp"/>
+
+    <EditText
+        android:id="@+id/txtTrabajo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Nombre Trabajo"
+        android:inputType="textCapWords"
+        android:fontFamily="@font/mouse_memoirs"
+        android:paddingStart="15dp"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/txtValor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTrabajo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Valor"
+        android:inputType="number"
+        android:fontFamily="@font/mouse_memoirs"
+        android:paddingStart="15dp"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/txtDuracion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtValor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Duracion"
+        android:inputType="textCapWords"
+        android:fontFamily="@font/mouse_memoirs"
+        android:paddingStart="15dp"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAnadir"
+        android:text="Añadir"
+        android:layout_below="@id/txtDuracion"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/mouse_memoirs"
+        android:background="#FFFFFF"
+        android:textColor="#880E4F"
+        android:textSize="26sp">
+    </Button>
+
+</RelativeLayout>

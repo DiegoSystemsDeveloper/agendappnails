@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    tools:context=".Agenda">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mouse_memoirs"
+        android:gravity="center_horizontal"
+        android:text="Fecha Agenda"
+        android:textColor="#880E4F"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btnFechaInicio"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp"
+        android:background="#ECE1E5"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="Fecha Inicio"
+        android:textAllCaps="false"
+        android:textColor="#880E4F"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/txtFechaInicio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btnFechaInicio"
+        android:fontFamily="@font/mouse_memoirs"
+        android:gravity="center_horizontal"
+        android:textColor="#784355"
+        android:enabled="false"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnFechaFinal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFechaInicio"
+        android:layout_marginStart="45dp"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="Fecha Final"
+        android:background="#ECE1E5"
+        android:textColor="#880E4F"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/txtFechaFinal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFechaInicio"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/btnFechaFinal"
+        android:gravity="center_horizontal"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnHoraInicio"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFechaFinal"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="7dp"
+        android:background="#ECE1E5"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="Hora Inicio"
+        android:textAllCaps="false"
+        android:textColor="#880E4F"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/txtHoraInicio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFechaFinal"
+        android:layout_marginStart="20dp"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:layout_toRightOf="@+id/btnHoraInicio"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnHoraFinal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHoraInicio"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="Hora Final"
+        android:textAllCaps="false"
+        android:background="#ECE1E5"
+        android:textColor="#880E4F"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/txtHoraFinal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHoraInicio"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/btnHoraFinal"
+        android:gravity="center_horizontal"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnHoraFinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/mouse_memoirs"
+        android:text="Registrar"
+        android:textAllCaps="true"
+        android:textColor="#880E4F"
+        android:textSize="28sp"></Button>
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    android:gravity="center"
+    tools:context=".Clientes">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Registro Cliente"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textColor="#880E4F"
+        android:textSize="35sp"/>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Nombre Cliente"
+        android:paddingStart="15dp"
+        android:inputType="textCapWords"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtApellido"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNombre"
+        android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Apellido Cliente"
+        android:inputType="textCapWords"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtCelular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtApellido"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:paddingStart="15dp"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCelular"
+        android:paddingStart="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Dirección"
+        android:inputType="textCapWords"
+        android:textColor="#784355"
+        android:textColorHint="#886C6C"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnAnadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDireccion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Añadir"
+        android:textAllCaps="true"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/mouse_memoirs"
+        android:textColor="#880E4F"
+        android:textSize="28sp"></Button>
+
+
+</RelativeLayout>

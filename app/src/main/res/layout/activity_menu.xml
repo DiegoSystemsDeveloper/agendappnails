@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:background="#FCE4EC"
+    tools:context=".Menu">
+
+    <ImageButton
+        android:id="@+id/imgBtnAgenda"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="#880E4F"
+        android:src="@drawable/eventnote"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgBtnClientes"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imgBtnAgenda"
+        android:background="#880E4F"
+        android:src="@drawable/client"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgBtnProductos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imgBtnAgenda"
+        android:layout_marginTop="15dp"
+        android:background="#880E4F"
+        android:src="@drawable/shopcar"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/imgBtnTrabajos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/imgBtnClientes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/imgBtnProductos"
+        android:background="#880E4F"
+        android:src="@drawable/brush"></ImageButton>
+</RelativeLayout>
